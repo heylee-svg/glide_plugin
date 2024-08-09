@@ -1,0 +1,27 @@
+//apply plugin: "groovy"
+//apply plugin: 'java'
+//apply 'groovy-gradle-plugin'
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.3.1"
+//        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+    }
+
+
+}
+
+plugins {
+    id 'java'
+    id 'groovy'
+    id 'groovy-gradle-plugin'
+}
+dependencies {
+    gradleApi()
+}
